@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+body{
+    overflow: auto;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+ 
+    
+}
+.con1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+    position: fixed;
+    background-color: #f9fafd00;
+    -webkit-backdrop-filter: saturate(180%) blur(4px);
+    backdrop-filter: saturate(180%) blur(10px);
+    box-shadow: 0 3px 20px 2px #0000001a;
+    
+ 
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    font: size 70px;
+    color: #7f00ff;
+}
+.navItem{
+    display: flex;
+}
+.navItem li{
+    list-style:none;
+    margin: 0px 15px;
+}
+.navItem li a{
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform:capitalize;
+}
+.navItem li:hover a, .link a:hover{
+    color: #7f00ff;
+
+}
+.link a{
+    color: #3d535f;
+    font-size: 30px;
+    margin: 25px 10px;
+}
+.wrap{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    padding: 0 10%;
+
+}
+.wrap::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -8%;
+    top: 40%;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    animation: object1 6s linear infinite;
+}
+.wrap::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    animation: object2 6s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: -10%;
+        top: 43%;
+    }
+}
+@keyframes object2{
+    50%{
+        left: 35%;
+        top: 14%;
+    }
+}
+.conhell{
+    width:50%;
+
+}
+.conoo{
+    z-index: 5;
+}
+.topline{
+    position: relative;
+    display: block;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+h1{
+    display: block;
+    font-size: 7em;
+    font-weight:900;
+    color: #3d535f;
+
+}
+.multitext{
+    color: #7f00ff;
+    text-transform: capitalize;
+
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+.btb{
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:400;
+    color: white;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+}
+button:hover{
+    background-color: #7f00ff;
+}
+.image{
+    position: relative;
+    width: 30%;
+    height: 40%;
+
+}
+.image img{
+    position: relative;
+    width:calc(130%-80px);
+    height: 1904px;
+    top: -88px;
+    right: -42px;
+    animation:animateuser 4s linear infinite;
+}
+@keyframes animateuser{
+    50%{
+        right: 30px;
+        top: -90px;
+    }
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+
+}
+.heading{
+    font-size: 5rem;
+    margin-bottom:3rem;
+    margin-top: 100px;
+    text-align: center;
+    color: #3d535f;
+}
+ 
+span{
+    color: #7f00ff;
+}
+.aboutimage{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutimage img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: .2rem solid #7f00ff;
+}
+.aboutimage .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-left: .2rem solid #7f00ff;
+    border-right: .2rem solid #7f00ff;
+    border-bottom: .2rem solid  white;
+    border-top: .2rem solid white;
+}
+.about-contant{
+    text-align: center;
+}
+.about-contant h3{
+    color: #7f00ff;
+    padding-bottom: 20px;
+}
+.about-contant p{
+    margin-left: 80px;
+}
+
+
+/* skills  */
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset:10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 23px;
+}
+.technical-bar .bar{
+margin-top: 40px 0;
+}
+.technical-bar .bar:first-child{
+    margin-top: 0;
+}
+.technical-bar .bar:last-child{
+    margin-top: 0;
+}
+.technical-bar .bar .info{
+    margin-bottom:5px;
+}
+.technical-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showtext 0.5 linear;
+    
+    opacity: 0;
+}
+.technical-bar.bar.program-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate {
+    100%{
+        transform :scalex(0);
+
+    }
+}
+.technical-bar .bar .program-line span{
+height: 100%;
+background-color:#7f00ff;
+position: absolute;
+border-radius: 10px;
+animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
+transform: scaleX(0);
+transform-origin: left;
+}
+.program-line html span{
+    width: 90%;
+}
+.program-line css span{
+    width: 90%;
+}
+.program-line javascript span{
+    width: 90%;
+}
+.program-line python span{
+    width: 90%;
+}
